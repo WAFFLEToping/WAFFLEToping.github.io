@@ -35,7 +35,7 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmdTHS5OImwg8EussuLyXkmvlIcgPDHGuEUg&s'); /* Ganti dengan URL gambar */
+    background-image: img src="latar.jpg";/* Ganti dengan URL gambar */
     background-size: cover;
     background-position: center;
     color: white;
