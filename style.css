@@ -35,22 +35,27 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('latar.jpg');
-    background-size: cover; /* Membuat gambar menutupi seluruh latar */
-    background-position: center; /* Memastikan gambar terpusat */
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-    animation: changeBackground 15s infinite;
-}
-
-@keyframes changeBackground {
-    0% {
+    body {
         background-image: url('latar.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: changeBackground 15s infinite;
     }
-    66% {
-        background-image: url('latar\ 3.jpg');
-    }
-    100% {
-        background-image: url('latar\ 4.jpg');
+    
+    @keyframes changeBackground {
+        0% {
+            background-image: url('latar.jpg');
+        }
+        33% {
+            background-image: url('latar 3.jpg');
+        }
+        66% {
+            background-image: url('latar 4.jpg');
+        }
+        100% {
+            background-image: url('latar 2.jpg');
+        }
     }
 }
 
