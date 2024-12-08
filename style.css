@@ -35,7 +35,7 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('https://files.oaiusercontent.com/file-7zSdu7qKgx7C8TdYJBaCLL?se=2024-12-08T03%3A00%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D69648c34-92e2-47ba-a639-8b94a9202200.webp&sig=oKkyvB2xHpbdlfwcNSadqYiFsvguDPfk3GbZuqIY4tI%3D'); /* Ganti dengan URL gambar */
+    background-image: url('latar.jpg'); /* Ganti dengan URL gambar */
     background-size: cover;
     background-position: center;
     color: white;
