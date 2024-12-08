@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #ff5aa7;
+    color: #f4e1f4;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ff5aa7;
+    background-color: #fedb5d;
     color: #fff;
 }
 
@@ -43,11 +43,11 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #e00561;
+    background-color: #fedb5d;
 }
 
 .login-btn, .cta-btn {
-    background-color: #e00561;
+    background-color: #fedb5d;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -57,15 +57,15 @@ body {
 }
 
 .login-btn:hover {
-    background-color: #45a049;
+    background-color: #68ff70;
 }
 
 .cta-btn:hover {
-    background-color: #e64a19;
+    background-color: #68ff70;
 }
 
 .login-btn:focus, .cta-btn:focus {
-    outline: 3px solid #ff5722;
+    outline: 3px solid #68ff70;
     outline-offset: 2px;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .trusted-by .cta-btn {
-    background-color: #ff5722;
+    background-color: #68ff70;
 }
 
 footer {
@@ -145,7 +145,7 @@ footer {
 }
 
 footer a {
-    color: #ff5722;
+    color: #68ff70;
     text-decoration: none;
 }
 
