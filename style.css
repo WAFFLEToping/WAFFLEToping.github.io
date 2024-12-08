@@ -35,7 +35,7 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmdTHS5OImwg8EussuLyXkmvlIcgPDHGuEUg&s'); /* Ganti dengan URL gambar */
+    background-image: url('https://files.oaiusercontent.com/file-7zSdu7qKgx7C8TdYJBaCLL?se=2024-12-08T03%3A00%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D69648c34-92e2-47ba-a639-8b94a9202200.webp&sig=oKkyvB2xHpbdlfwcNSadqYiFsvguDPfk3GbZuqIY4tI%3D'); /* Ganti dengan URL gambar */
     background-size: cover;
     background-position: center;
     color: white;
@@ -78,4 +78,96 @@ body {
     background-color: #333;
     color: white;
     font-size: 14px;
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Menu Container */
+.menu-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 28px;
+    color: #FFA500;
+    margin-bottom: 20px;
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.menu-details {
+    flex: 1;
+}
+
+.menu-name {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.menu-description {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.menu-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFA500;
+}
+
+.menu-quantity {
+    margin-top: 10px;
+}
+
+.btn-quantity {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-quantity:hover {
+    background-color: #e68a00;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
