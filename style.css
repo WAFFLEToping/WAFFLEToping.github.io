@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    color: #e00561;
+    color: #fedb5d;
 }
 
 .navbar {
@@ -161,11 +161,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #ff5aa7;
+    color: #fedb5d;
 }
 
 .container {
-    color: #e00561;
+    color: #fedb5d;
 }
 
 .navbar {
@@ -173,7 +173,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ff5aa7;
+    background-color: #fedb5d;
     color: #fff;
 }
 
@@ -195,11 +195,11 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #e00561;
+    background-color: #fedb5d;
 }
 
 .login-btn, .cta-btn {
-    background-color: #e00561;
+    background-color: #fedb5d;
     color: #fff;
     border: none;
     cursor: pointer;
