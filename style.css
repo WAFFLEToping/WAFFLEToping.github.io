@@ -35,11 +35,26 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-image: img src="latar.jpg";/* Ganti dengan URL gambar */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    position: relative;
+    background-image: url('latar.jpg');
+    background-size: cover; /* Membuat gambar menutupi seluruh latar */
+    background-position: center; /* Memastikan gambar terpusat */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    animation: changeBackground 15s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('latar.jpg');
+    }
+    33% {
+        background-image: url('latar\ 2.jpeg');
+    }
+    66% {
+        background-image: url('latar\ 3.jpg');
+    }
+    100% {
+        background-image: url('latar\ 4.jpg');
+    }
 }
 
 .hero h1 {
