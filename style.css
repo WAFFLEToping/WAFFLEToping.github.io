@@ -35,28 +35,11 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    body {
-        background-image: url('latar.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        animation: changeBackground 15s infinite;
-    }
-    
-    @keyframes changeBackground {
-        0% {
-            background-image: url('latar.jpg');
-        }
-        33% {
-            background-image: url('latar 3.jpg');
-        }
-        66% {
-            background-image: url('latar 4.jpg');
-        }
-        100% {
-            background-image: url('latar 2.jpg');
-        }
-    }
+    background-image: url('https://your-image-url-here.jpg'); /* Ganti dengan URL gambar */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
 }
 
 .hero h1 {
@@ -96,6 +79,7 @@ body {
     color: white;
     font-size: 14px;
 }
+
 
 .image-mockup img {
     width: 100%;
