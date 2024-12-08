@@ -1,85 +1,110 @@
-/* Reset */
-body {
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* Header */
-.header {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #ff5aa7;
+}
+
+.container {
+    color: #e00561;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #FFA500;
-    color: white;
+    padding: 10px 20px;
+    background-color: #ff5aa7;
+    color: #fff;
 }
 
-.header .logo {
-    font-size: 20px;
-    font-weight: bold;
+.navbar h1 {
+    font-size: 1.5rem;
 }
 
-.header nav a {
-    margin: 0 10px;
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.header nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background-image: url('https://your-image-url-here.jpg'); /* Ganti dengan URL gambar */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.hero .button {
-    background-color: #FFA500;
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.hero .button:hover {
-    background-color: #e68a00;
+.navbar-links a:hover {
+    background-color: #e00561;
 }
 
-/* Footer */
-.footer {
+.login-btn, .cta-btn {
+    background-color: #e00561;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.cta-btn:hover {
+    background-color: #e64a19;
+}
+
+.login-btn:focus, .cta-btn:focus {
+    outline: 3px solid #ff5722;
+    outline-offset: 2px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.hero {
     text-align: center;
-    padding: 15px 20px;
-    background-color: #333;
-    color: white;
-    font-size: 14px;
+    padding: 50px 20px;
+    background-image: url('path-to-your-image/imagess.jpg'); /* Ensure the correct image path */
+    background-size: cover;
+    background-position: center;
 }
 
+.hero h2 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hero .cta-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
 
 .image-mockup img {
     width: 100%;
@@ -87,3 +112,311 @@ body {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+.trusted-by {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('path-to-your-image/imagess1.jpg'); /* Ensure the correct image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.trusted-by .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trusted-by img {
+    width: 270px;
+    height: auto;
+}
+
+.trusted-by .cta-btn {
+    background-color: #ff5722;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+/* Responsiveness */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #ff5aa7;
+}
+
+.container {
+    color: #e00561;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff5aa7;
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #e00561;
+}
+
+.login-btn, .cta-btn {
+    background-color: #e00561;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.cta-btn:hover {
+    background-color: #e64a19;
+}
+
+.login-btn:focus, .cta-btn:focus {
+    outline: 3px solid #ff5722;
+    outline-offset: 2px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('path-to-your-image/imagess.jpg'); /* Correct image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hero .cta-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.image-mockup img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.trusted-by {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('path-to-your-image/imagess1.jpg'); /* Correct image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.trusted-by .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trusted-by img {
+    width: 270px;
+    height: auto;
+}
+
+.trusted-by .cta-btn {
+    background-color: #ff5722;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    /* Adjust navbar and layout for tablets */
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .navbar-links a {
+        padding: 10px 25px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .trusted-by .logos {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust navbar for mobile view */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        height: calc(100vh - 60px); /* Full-screen menu */
+        overflow-y: auto; /* Prevent overflow */
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .trusted-by .logos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust layout for very small screens */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .navbar-links a {
+        padding: 10px 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero .cta-btn {
+        font-size: 1rem;
+    }
+
+    .trusted-by img {
+        width: 250px;
+        margin: 5px;
+    }
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+

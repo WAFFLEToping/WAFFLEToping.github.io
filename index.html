@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +7,62 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <div class="header">
-        <div class="logo">🧇 WAFFLE Toping</div>
-        <nav>
-            <a href="#beranda">Beranda</a>
-            <a href="#menu">Menu</a>
-            <a href="#Lokasi">Lokasi</a>
-        </nav>
-    </div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2JK81KQ9M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <div class="hero">
-        <h1>Selamat Datang di WAFFLE Toping.</h1>
-        <h2>"Nikmati Waffle Lezat dengan Beragam Topping Menarik!"</h2>
-        <p>"Lezatnya Waffle, Manisnya Topping, Sempurnakan Harimu!"</p>
-        <a href="https://enny-kristik.github.io/pricelist/" class="cta-btn">Pesan disini!</a>
+  gtag('config', 'G-2JK81KQ9M6');
+</script>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>WAFFLEToping</h1>
+            <div class="navbar-links">
+                <a href="https://enny-kristik.github.io/galeri/" class="login-btn">Galeri</a>
+                <a href="https://maps.app.goo.gl/YUC5pd3AjRuMDqPG9" class="cta-btn">Maps</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <link rel="navbar" href="style.css">
+            <link rel="login-btn" href="style.css">
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2> WAFFLE Toping </h2>
+            <h3>"Perpaduan Rasa yang Sempurna dalam Setiap Gigitan"
+                </h3>
+           
+            <p>Setiap waffle yang disajikan dengan topping istimewa dirancang untuk memberikan kesenangan tiada tara di setiap suapan. Paduan rasa yang memikat, sempurna untuk setiap momen!</p>
+            <a href="https://enny-kristik.github.io/pricelist/" class="cta-btn">Pesan disini!</a>
             <div class="image-mockup">
-                <img src="logo.jpg" alt="logo">
+                <img src="ENNY 2.png" alt="Sample Room Image">
             </div>
         </section>
-    </div>
+    </main>
 
-    <html lang="id">
+    <script>
+        // JavaScript untuk toggle menu mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latar Belakang Gradient</title>
     <style>
         body {
-            background: linear-gradient(to right, #39B6FF, #f4e1f4); /* Gradien dari biru ke pink baby */
+            background: linear-gradient(to right, #f4e1f4, #39b6ff); /* Gradien dari merah muda ke maron */
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -54,14 +81,9 @@
 </head>
 <body>
     <!-- Ikon WhatsApp -->
-    <a href="https://wa.me/6285270317187" target="_blank" class="whatsapp-icon">
+    <a href="https://wa.me/6289627063933" target="_blank" class="whatsapp-icon">
         <i class="fab fa-whatsapp"></i>
     </a>
 </body>
 </html>
 
-    <div class="footer">
-        2024 WAFFLEToping. Semua Hak Dilindungi.
-    </div>
-</body>
-</html>
