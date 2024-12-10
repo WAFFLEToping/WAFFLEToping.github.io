@@ -1,0 +1,185 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #f4e1f4;
+}
+
+.container {
+    color: #fedb5d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fedb5d;
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #fedb5d;
+}
+
+.login-btn, .cta-btn {
+    background-color: #fedb5d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #68ff70;
+}
+
+.cta-btn:hover {
+    background-color: #68ff70;
+}
+
+.login-btn:focus, .cta-btn:focus {
+    outline: 3px solid #68ff70;
+    outline-offset: 2px;
+}
+
+/* Menu Container */
+.menu-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4e1f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 28px;
+    color: #FFA500;
+    margin-bottom: 20px;
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+}
+
+.menu-image:hover {
+    transform: translateY(-5px); /* Mengangkat gambar ke atas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek timbul */
+}
+
+.menu-details {
+    flex: 1;
+}
+
+.menu-name {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.menu-description {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.menu-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFA500;
+}
+
+.menu-quantity {
+    margin-top: 10px;
+}
+
+.btn-quantity {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-quantity:hover {
+    background-color: #e68a00;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-checkout {
+    background-color: transparent; /* Latar belakang transparan */
+    color: #007bff; /* Teks biru */
+    border: 2px solid #007bff; /* Border biru */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Ukuran font */
+    font-weight: bold; /* Teks tebal */
+    cursor: pointer; /* Kursor pointer */
+    transition: background-color 0.3s, color 0.3s; /* Transisi halus */
+}
+
+.btn-checkout:hover {
+    background-color: #007bff; /* Latar belakang biru saat hover */
+    color: white; /* Teks putih saat hover */
+}
