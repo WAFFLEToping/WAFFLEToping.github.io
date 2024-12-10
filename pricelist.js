@@ -15,25 +15,42 @@ document.querySelectorAll(".btn-quantity").forEach(button => {
   });
 });
 
-// Event listener untuk tombol checkout
-document.getElementById("checkout-button").addEventListener("click", function () {
-  const menuItems = document.querySelectorAll(".menu-item");
-  let orderMessage = "";
+document.getElementById("btn-plus").addEventListener("click", function () {
+  const quantitySpan = document.querySelector(".quantity");
+  let quantity = parseInt(quantitySpan.textContent);
+  quantity++;
+  quantitySpan.textContent = quantity;
+});
 
-  menuItems.forEach(item => {
-    const itemName = item.querySelector(".menu-name").textContent;
-    const quantity = parseInt(item.querySelector(".quantity").textContent);
-
-    if (quantity > 0) {
-      orderMessage += `Saya ingin memesan ${quantity} ${itemName}.\n`;
-    }
-  });
-
-  if (orderMessage) {
-    const phoneNumber = "6289627063933"; // Ganti dengan nomor WhatsApp Anda
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(orderMessage)}`;
-    window.open(whatsappUrl, "_blank");
-  } else {
-    alert("Silakan pilih jumlah item sebelum checkout.");
+document.getElementById("btn-minus").addEventListener("click", function () {
+  const quantitySpan = document.querySelector(".quantity");
+  let quantity = parseInt(quantitySpan.textContent);
+  if (quantity > 0) {
+    quantity--;
+    quantitySpan.textContent = quantity;
   }
 });
+
+let orderItem = '';
+let orderPrice = 0;
+
+function updateOrder(item, price) {
+  document.getElementById(
+    "order-summary"
+  ).textContent = `${item} x1 - Rp${price}`;
+  document.getElementById("total-price").textContent = `Total: Rp${price}`;
+
+  document.getElementById("checkout-modal").style.display = "flex";
+}
+
+function closeCheckout() {
+  document.getElementById("checkout-modal").style.display = "none";
+}
+
+function redirectToWhatsApp(orderItem, orderPrice) {
+  const message = `Halo, saya ingin memesan ${orderItem} seharga Rp${orderPrice}`;
+  const whatsappURL = `https://wa.me/628?text=${encodeURIComponent(
+    message
+  )}`;
+  window.open(whatsappURL, "_blank");
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latar Belakang Gradient</title>
+    <title>pricelist</title>
     <style>
       body {
         background: linear-gradient(
@@ -43,7 +43,7 @@
         <h1>WAFFLEToping</h1>
         <div class="navbar-links">
           <a
-            href="https://waffletoping.github.io/WAFFLEToping/"
+            href="index.html"
             class="login-btn"
             >Beranda</a
           >
@@ -75,7 +75,7 @@
           <div class="menu-item">
   <img src="strawberry.jpg" alt="Waffle Selau Strawberry" class="menu-image" />
   <div class="menu-details">
-    <h2 class="menu-name">Waffle Selau Strawberry</h2>
+    <h2 class="menu-name">Waffle selai Strawberry</h2>
     <p class="menu-description">
       Rasakan kenikmatan waffle hangat yang dipadu sempurna dengan selai strawberry manis dan segar.
     </p>
@@ -92,7 +92,7 @@
 </div>
 
   <!-- Hubungkan file JavaScript di sini -->
-    <script src="pricelist.js"></script>
+    <script src="pricelist.js" defer></script>
 </body>
 </html>
 
@@ -135,13 +135,19 @@
               <div class="menu-price">
                 <span>Rp5.000</span>
               </div>
-              <div class="menu-quantity">
-                <button class="btn-quantity">-</button>
-                <span class="quantity">0</span>
-                <button class="btn-quantity">+</button>
-              </div>
-            </div>
-          </div>
+             <div class="menu-quantity">
+      <button class="btn-quantity" id="btn-minus">-</button>
+      <span class="quantity">0</span>
+      <button class="btn-quantity" id="btn-plus">+</button>
+    </div>
+    <button class="btn-checkout" id="checkout-button">Checkout</button>
+  </div>
+</div>
+
+  <!-- Hubungkan file JavaScript di sini -->
+    <script src="pricelist.js"></script>
+</body>
+</html>
 
           <!-- Item 4 -->
           <div class="menu-item">
@@ -392,3 +398,4 @@
     </html>
   </body>
 </html>
+
