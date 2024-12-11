@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAFFLEToping</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #f4e1f4, #39b6ff);
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .menu-container {
+        padding: 20px;
+      }
+      .menu-item {
+        margin-bottom: 20px;
+      }
+      .menu-details {
+        margin-top: 10px;
+      }
+      .menu-quantity {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .btn-quantity {
+        background-color: #39b6ff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 18px;
+        margin: 0 10px;
+      }
+      .quantity {
+        font-size: 20px;
+      }
+      .btn-checkout {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #f4e1f4;
+        color: #39b6ff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>WAFFLEToping</h1>
+        <div class="navbar-links">
+          <a href="index.html" class="cta-btn">Beranda</a>
+          <a href="https://maps.app.goo.gl/umNBcA7w96sn8Vjm7" class="cta-btn">Maps</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="menu-container">
+      <h1 class="menu-title">Menu Kami</h1>
+
+      <!-- Menu Item -->
+      <div class="menu-item">
+        <img src="strawberry.jpg" alt="Waffle Selai Strawberry" class="menu-image" />
+        <div class="menu-details">
+          <h2 class="menu-name">Waffle Selai Strawberry</h2>
+          <p class="menu-description">Rasakan kenikmatan waffle hangat yang dipadu sempurna dengan selai strawberry manis dan segar.</p>
+          <div class="menu-price">
+            <span>Rp5.000</span>
+          </div>
+          <div class="menu-quantity">
+            <button class="btn-quantity btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-quantity btn-plus">+</button>
+          </div>
+          <button class="btn-checkout">Checkout</button>
+        </div>
+      </div>
+
+      <!-- Duplicate similar items for other waffles, here is an example for the next item -->
+
+      <div class="menu-item">
+        <img src="blueberry.jpg" alt="Waffle Selai Blueberry" class="menu-image" />
+        <div class="menu-details">
+          <h2 class="menu-name">Waffle Selai Blueberry</h2>
+          <p class="menu-description">Nikmati kelembutan waffle hangat yang dipadukan dengan selai blueberry kaya rasa, memberikan sentuhan manis dan sedikit asam yang menyegarkan.</p>
+          <div class="menu-price">
+            <span>Rp5.000</span>
+          </div>
+          <div class="menu-quantity">
+            <button class="btn-quantity btn-minus">-</button>
+            <span class="quantity">0</span>
+            <button class="btn-quantity btn-plus">+</button>
+          </div>
+          <button class="btn-checkout">Checkout</button>
+        </div>
+      </div>
+
+      <!-- Add more menu items similarly as required -->
+
+    </div>
+
+    <script>
+      // Script to handle + and - button functionality
+      document.querySelectorAll('.btn-plus').forEach((button) => {
+        button.addEventListener('click', () => {
+          let quantityElement = button.previousElementSibling; // span with quantity
+          let quantity = parseInt(quantityElement.textContent);
+          quantityElement.textContent = quantity + 1;
+        });
+      });
+
+      document.querySelectorAll('.btn-minus').forEach((button) => {
+        button.addEventListener('click', () => {
+          let quantityElement = button.nextElementSibling; // span with quantity
+          let quantity = parseInt(quantityElement.textContent);
+          if (quantity > 0) {
+            quantityElement.textContent = quantity - 1;
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
