@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .testimonial-container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .testimonial {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial-item {
+            min-width: 100%;
+            padding: 70px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <div class="testimonial-item">
+                <img src="tes1.jpg" alt="User 1">
+                <h3>Chalista Putri</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Mantap poll, murah sekali dan tidak over sweet nyam nyam</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="tes2.png" alt="User 2">
+                <h3>Azriel Azriel</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Makanan: 5<br>Layanan: 5<br>Suasana: 5</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="tes3.png" alt="User 3">
+                <h3>Alya Nur Hamizah</h3>
+                <p>⭐⭐⭐⭐</p>
+                <p>mantapp enak betul, crunchy bgt trus topingnyaa melimpahh🤤😋</p>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <span class="arrow" onclick="prevSlide()">&#9665;</span>
+        <span class="arrow" onclick="nextSlide()">&#9655;</span>
+    </div>
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".testimonial-item");
+        const totalSlides = slides.length;
+
+        function showSlide() {
+            const slider = document.querySelector(".testimonial");
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % totalSlides;
+            showSlide();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + totalSlides) % totalSlides;
+            showSlide();
+        }
+
+        setInterval(nextSlide, 3000); // Auto-scroll setiap 3 detik
+    </script>
+</body>
+</html>
