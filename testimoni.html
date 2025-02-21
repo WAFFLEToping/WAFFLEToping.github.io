@@ -16,7 +16,8 @@
             background-color: #f0f0f0;
         }
         .testimonial-container {
-            width: 50%;
+            width: 80%;
+            max-width: 600px;
             margin: auto;
             overflow: hidden;
             position: relative;
@@ -27,7 +28,7 @@
         }
         .testimonial-item {
             min-width: 100%;
-            padding: 70px;
+            padding: 20px;
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             border-radius: 10px;
@@ -40,14 +41,35 @@
             border-radius: 50%;
         }
         .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
+            transform: translateY(-50%);
+            padding: 0 10px;
         }
         .arrow {
             cursor: pointer;
             font-size: 24px;
-            margin: 0 10px;
+            background-color: lightblue;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+        }
+        .arrow:hover {
+            background-color: darkblue;
+        }
+        @media (max-width: 600px) {
+            .testimonial-container {
+                width: 90%;
+            }
+            .arrow {
+                font-size: 18px;
+                padding: 8px;
+            }
         }
     </style>
 </head>
@@ -73,10 +95,10 @@
                 <p>mantapp enak betul, crunchy bgt trus topingnyaa melimpahh🤤😋</p>
             </div>
         </div>
-    </div>
-    <div class="controls">
-        <span class="arrow" onclick="prevSlide()">&#9665;</span>
-        <span class="arrow" onclick="nextSlide()">&#9655;</span>
+        <div class="controls">
+            <button class="arrow" onclick="prevSlide()">&#9665;</button>
+            <button class="arrow" onclick="nextSlide()">&#9655;</button>
+        </div>
     </div>
     <script>
         let index = 0;
